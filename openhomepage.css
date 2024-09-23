@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(240, 210, 131);
+  background-image: url(Screenshot\ 2024-07-17\ at\ 12.49.40\ PM.png);
+ background-repeat: no-repeat;
+ background-size: 2000px 2000px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-repeat: no-repeat;
+}
+
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.button-container button {
+  height: 50px;
+}
+
+.popup-button {
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.popup-button::after {
+  content: attr(data-popup);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-button:hover {
+  transform: scale(1.1);
+}
+
+.popup-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.location-climbing {
+  flex-basis: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  
+}
+
+.climber-gods {
+  flex-basis: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0px;  
+  background-image: url(PHOTO-2024-09-13-09-38-08.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.climbing-type {
+  text-align: center;
+  flex-basis: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+button:hover {
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+.climbing-section {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.climbing-section h1 {
+  color: #333;
+  margin-top: 0;
+}
+
+.climbing-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.climbing-section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}

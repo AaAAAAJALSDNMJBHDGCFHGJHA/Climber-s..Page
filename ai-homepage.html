@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crag Studio</title>
+	<style>
+		body {
+			background-image: url('Screenshot 2024-07-17 at 12.49.40 PM.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+      </div>
+	<img src="Screenshot_2024-07-29_at_4.48.53_PM-removebg.png" alt="Crag Studio Image" width="100%" height="500px">
+</body>
+
+<div class="button-container">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+  </div>
+  
+  <style>
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid black;
+      padding: 10px;
+      width: 400px;
+    }
+    .button-container button {
+      height: 50px;
+    }
+  </style>
+
+<div class="button-container">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+  </div>
+  
+  <style>
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid black;
+      padding: 10px;
+      width: 400px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .button-container button {
+      height: 50px;
+    }
+  </style>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crag Studio Chat</title>
+  <link rel="stylesheet" href="chat.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .chat-header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+    .chat-messages {
+      padding: 20px;
+      width: 100%;
+      max-width: 800px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .chat-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .chat-message .username {
+      font-weight: bold;
+    }
+    .chat-input {
+      padding: 10px;
+      width: 100%;
+      max-width: 800px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .chat-input input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .chat-input button[type="submit"] {
+      width: 20%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Crag Studio Chat</h1>
+    </div>
+    <div class="chat-messages">
+      <div class="chat-message">
+        <span class="username">John Doe</span>: Hello, how are you?
+      </div>
+      <div class="chat-message">
+        <span class="username">Jane Doe</span>: I'm good, thanks! How about you?
+      </div>
+    </div>
+    <div class="chat-input">
+      <form>
+        <input type="text" placeholder="Type a message...">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="openhomepage.css">
+
+
+<title>Crag Studio</title>
+
+<head>
+  <div class="button-container">
+    <button class="popup-button" onclick="location.href='openhomepage.html'">Home / Guide</button>
+    <button class="popup-button">About</button>
+    <button class="popup-button" onclick="location.href='chat.html'">Chat</button>
+    <button class="popup-button">Community</button>
+  </div>
+</head>
+
+<body style="background-image: url('background-image.jpg'); background-size: cover; height: 100vh; margin: 0;">
+  <center>
+    <div class="image-container">
+      <img height="331.8425px" width="1000px" src="Screenshot_2024-09-12_at_11.21.59_AM-removebg-preview.png">
+    </div>
+  </center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="location-climbing">
+    <!-- content for location climbing section -->
+  </section>
+  <section class="climber-gods">
+    <div class="climbing-type">
+      <button onclick="location.href='#bouldering'">Bouldering</button>
+    </div>
+    <div class="climbing-type">
+      <button onclick="location.href='#lead-climbing'">Lead-climbing</button>
+    </div>
+    <div class="climbing-type">
+      <button onclick="location.href='#speed-climbing'">Speed climbing</button>
+    </div>
+    <div class="climbing-type">
+      <button onclick="location.href='#trad-climbing'">Trad climbing</button>
+    </div>
+  </section>
+  <!-- Add the corresponding anchor tags to the sections -->
+  <section id="bouldering" class="climbing-section">
+    <h1>Bouldering</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <img src="" alt="Bouldering Image">
+  </section>
+
+  <section id="lead-climbing" class="climbing-section">
+    <h1>Lead-climbing</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <img src="" alt="Lead-climbing Image">
+  </section>
+
+  <section id="speed-climbing" class="climbing-section">
+    <h1>Speed climbing</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <img src="" alt="Speed climbing Image">
+  </section>
+
+  <section id="trad-climbing" class="climbing-section">
+    <h1>Trad climbing</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <img src="" alt="Trad climbing Image">
+  </section>
+
+</body>
+</html>

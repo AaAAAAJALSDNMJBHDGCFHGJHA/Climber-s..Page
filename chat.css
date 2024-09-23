@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f06a;
+  background-image: url(PHOTO-2024-09-13-09-38-08.jpg);
+  opacity: 1; /* 50% opacity */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+
+  
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.chat-window {
+  flex-basis: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.tips-tricks {
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  visibility: visible;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.button-container button {
+  height: 50px;
+}
+
+.popup-button {
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.popup-button::after {
+  content: attr(data-popup);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-button:hover {
+  transform: scale(1.1);
+}
+
+.popup-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
